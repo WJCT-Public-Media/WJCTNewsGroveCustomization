@@ -1,0 +1,177 @@
+:root {
+  --WJCT-primary: #006BB6;
+  --WJCT-secondary: #40C4FF;
+  --WJCT-tertiary: #2C3E50;
+  --WJCT-light-text: white;
+  --WJCT-red: #D50000;
+  --bodyFont: "Montserrat", sans-serif;
+  --primaryFont: "Montserrat", sans-serif;
+  --primaryHeadlineFont: "Merriweather", serif;
+  --secondaryHeadlineFont: "Merriweather", serif;
+  --headerBgColor: #006BB6;
+  --buttonHeight: 40px;
+  --WJCT-link: #40C4FF;
+}
+
+html {
+  font-family: var(--primaryFont);
+}
+
+.Page-header-hamburger-menu-content, .Page-header-hamburger-menu-content, .Page-header-hamburger-menu-wrapper {
+  background-color: var(--WJCT-tertiary);
+  }
+
+.BrightspotPersistentPlayer-drawer {
+    background: var(--WJCT-tertiary);
+}
+
+/* Override the solid color background */
+.Page-header-persistent-player{
+  background:transparent;
+}
+
+svg.chevron, .NavigationItem-text.gtm_nav_cat, .Page-header-hamburger-menu-content .NavigationItem .NavigationLink {
+  color: var(--WJCT-light-text);
+}
+
+.NavigationItem-text.gtm_nav_cat span:hover {
+  color: var(--WJCT-secondary);
+}
+
+nav.DropdownNavigation.gtm_nav .NavigationItem-items-item.gtm_nav_subcat a:hover, .Page-header-hamburger-menu-content .NavigationItem .NavigationLink:hover {
+  color: var(--WJCT-link);
+}
+
+.close-x, .NavigationItem-more svg {
+  fill: var(--WJCT-light-text);
+}
+
+.Page-header-donate-button.gtm_donate {
+  background-color: var(--WJCT-red);
+}
+
+.Page-header-donate-button.gtm_donate {
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: .25em;
+  text-transform: uppercase;
+}
+
+.Page-footer-branding {
+  background-color: var(--WJCT-tertiary);
+}
+
+ul.NavigationItem-items {
+  padding: 0px !important;
+}
+
+nav.DropdownNavigation.gtm_nav li.NavigationItem-items-item.gtm_nav_subcat:hover {
+  background-color: rgba(44, 62, 80, .2);
+  color: var(--WJCT-primary);
+}
+.Page-header-nav-bar {
+    background: none;
+}
+
+/* Removed white bar from bottom of last navigation item.
+li.NavigationItem-items-item.gtm_nav_subcat:last-child a.NavigationLink{
+    border-bottom: 0px;
+} */
+/* Removed white bar from bottom of all navigation items. */
+
+.Page-header-nav-bar .NavigationItem .NavigationItem-items .NavigationLink{
+    border-bottom: 0px;
+}
+
+/* Change color of nav menu drop down */
+ul.NavigationItem-items {
+    background-color: var(--WJCT-tertiary) !important;
+}
+.NavigationItem .NavigationLink {
+    color:white;
+}
+
+/* Add light blue line above categories */
+
+.PromoA-category, .PromoB-category, .PromoC-category {
+    padding-top: 15px;
+    border-top-color: var(--WJCT-secondary);
+    border-top-style: solid;
+}
+
+.NavigationItem-text {
+  font-weight: 700;
+}
+
+/* Make transparent cover disappear and make volume button yellow/black */
+button.BrightspotPersistentPlayer-volumeControl-toggle {
+    color:black;
+    background-color:yellow;
+    border-radius:50%;
+    height:34px;
+    margin-top:7px;
+}
+
+.BrightspotPersistentPlayer-volumeControl-toggle:after, .BrightspotPersistentPlayer-volumeControl-toggleMobile:after {
+    opacity: 0;
+    }
+
+/* Change All Streams button to secondary color and rounded rectangle */
+.BrightspotPersistentPlayer-drawerToggle {
+    background-color:var(--WJCT-secondary);
+    border-radius:5px;
+}
+
+/* Make Next Up disappear */
+.BrightspotPersistentPlayer-tabletDesktopExtraInfo {
+  display:none;
+}
+
+/* Make all buttons the same height */
+.BrightspotPersistentPlayer-drawerControls, .Page-header-donate-button {
+    height:var(--buttonHeight);
+}
+
+.Page-header-search-button-mobile .icon-magnify, .Page-header-search-button .icon-magnify, .Page-header-menu-trigger .burger-menu, .Page-header-hamburger-menu-close .close-x  {
+    fill: white;
+}
+
+/* Change the background to the image: */
+ps-header.Page-header {
+    background-image: url("http://npr-brightspot.s3.amazonaws.com/aa/4d/59ec9482439f9ab1e1a6bbc35122/wjct-news-header-image.png");
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+/* Rearranging the persistent player  */
+ps-brightspot-persistent-player.BrightspotPersistentPlayer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+ps-brightspot-persistent-player.BrightspotPersistentPlayer > .BrightspotPersistentPlayer-streamInfo { order: 1; }
+ps-brightspot-persistent-player.BrightspotPersistentPlayer > .BrightspotPersistentPlayer-playerControls { order: 2; }
+ps-brightspot-persistent-player.BrightspotPersistentPlayer > .BrightspotPersistentPlayer-volumeControl { order: 3; }
+ps-brightspot-persistent-player.BrightspotPersistentPlayer > .BrightspotPersistentPlayer-drawerControls { order: 4; }
+
+/* Player button formatting */
+
+button.StreamPill {
+    background-color: var(--WJCT-tertiary);
+    color: white;
+}
+
+/* Styles for mobile devices smaller than a tablet */
+@media only screen
+and (max-device-width: 767px)
+{
+    .Page-header-donate-button.gtm_donate a.Link {
+        color:transparent;
+        margin-left:-90px;
+    }
+    .Page-header-donate-button.gtm_donate a.Link:after {
+        color:white;
+        content:"Donate";
+    }
+}
