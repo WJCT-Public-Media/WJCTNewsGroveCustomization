@@ -11,7 +11,7 @@
     --headerBgColor: #006BB6;
     --buttonHeight: 40px;
     --WJCT-link: #40C4FF;
-}
+} 
 
 html {
     font-family: var(--primaryFont);
@@ -117,7 +117,7 @@ ul.NavigationItem-items {
 /* Make transparent cover disappear and make volume button yellow/black */
 button.BrightspotPersistentPlayer-volumeControl-toggle {
     color: black;
-    background-color: yellow;
+    background-color: #FFCC00;
     border-radius: 50%;
     margin-top: 7px;
     height: 30px;
@@ -171,6 +171,16 @@ ps-header.Page-header {
 
 [data-header-sticky] ps-header.Page-header {
     padding-top: 10px;
+}
+
+.Page-header-logo {
+    display:block;
+}
+
+.Page-header-logo img {
+    width: 405px;
+    height: 110px;
+    max-height: 110px;
 }
 
 .Page-header-top-bar {
