@@ -142,6 +142,22 @@ ps-header.Page-header {
     background-image: url("http://npr-brightspot.s3.amazonaws.com/aa/4d/59ec9482439f9ab1e1a6bbc35122/wjct-news-header-image.png");
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
+    display: flex;
+    flex-direction: column;
+    padding-top: 45px;
+}
+
+[data-header-sticky] ps-header.Page-header {
+    padding-top: 10px;
+}
+
+.Page-header-top-bar {
+    position:relative;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    height: 100%;
+    align-items: flex-start;
 }
 
 /* Rearranging the persistent player  */
@@ -154,6 +170,44 @@ ps-brightspot-persistent-player.BrightspotPersistentPlayer > .BrightspotPersiste
 ps-brightspot-persistent-player.BrightspotPersistentPlayer > .BrightspotPersistentPlayer-playerControls { order: 2; }
 ps-brightspot-persistent-player.BrightspotPersistentPlayer > .BrightspotPersistentPlayer-volumeControl { order: 3; }
 ps-brightspot-persistent-player.BrightspotPersistentPlayer > .BrightspotPersistentPlayer-drawerControls { order: 4; }
+
+button.Page-header-search-button {
+    display: none;
+}
+
+.BrightspotPersistentPlayer-drawerControls {
+    display: none;
+}
+
+.Page-header-nav-bar {}
+
+.Page-header-logo {
+    position:absolute;
+    z-index: 10000;
+    /* height: 1000px; */
+}
+[data-header-sticky] .Page-header-logo {
+    position:relative;
+}
+
+.BrightspotPersistentPlayer-volumeControl {
+    display: flex; 
+    flex-direction: row;
+    margin-right: 0;
+}
+button.BrightspotPersistentPlayer-volumeControl-toggle{
+    order: 2;
+    margin-right: 0;
+}
+
+.BrightspotPersistentPlayer-volumeControl-slider{
+    order: 1;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.BrightspotPersistentPlayer-playerControls {
+    margin-right: 0;
+}
 
 /* Player button formatting */
 
