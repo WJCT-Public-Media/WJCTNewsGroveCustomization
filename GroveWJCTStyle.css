@@ -119,8 +119,13 @@ button.BrightspotPersistentPlayer-volumeControl-toggle {
     color: black;
     background-color: yellow;
     border-radius: 50%;
-    height: 34px;
     margin-top: 7px;
+    height: 30px;
+    width: 30px;
+}
+
+.noUi-target.noUi-rtl.noUi-vertical.noUi-txt-dir-ltr, .noUi-handle.noUi-handle-lower {
+    width: 8px;
 }
 
 .BrightspotPersistentPlayer-volumeControl-toggle:after,
@@ -200,6 +205,26 @@ ps-brightspot-persistent-player.BrightspotPersistentPlayer>.BrightspotPersistent
     order: 4;
 }
 
+.BrightspotPersistentPlayer-streamInfo {
+    text-align:right;
+    display: flex;
+    flex-direction: column;
+    padding:20px;
+}
+.BrightspotPersistentPlayer-name, .BrightspotPersistentPlayer-programName {
+    font-family: 'Montserrat';
+    font-weight:bold;
+}
+.BrightspotPersistentPlayer-name{
+    order: 2;
+    font-size: 1.2rem;
+    }
+.BrightspotPersistentPlayer-programName {
+    order: 1;
+    font-size: 1.6rem;
+    }
+
+
 button.Page-header-search-button {
     display: none;
 }
@@ -260,3 +285,4 @@ button.StreamPill {
         content: "Donate";
     }
 }
+
