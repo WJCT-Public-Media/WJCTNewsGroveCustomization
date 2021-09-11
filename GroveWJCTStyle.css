@@ -11,7 +11,7 @@
     --headerBgColor: #006BB6;
     --buttonHeight: 40px;
     --WJCT-link: #40C4FF;
-} 
+}
 
 html {
     font-family: var(--primaryFont);
@@ -124,7 +124,8 @@ button.BrightspotPersistentPlayer-volumeControl-toggle {
     width: 30px;
 }
 
-.noUi-target.noUi-rtl.noUi-vertical.noUi-txt-dir-ltr, .noUi-handle.noUi-handle-lower {
+.noUi-target.noUi-rtl.noUi-vertical.noUi-txt-dir-ltr,
+.noUi-handle.noUi-handle-lower {
     width: 8px;
 }
 
@@ -173,16 +174,6 @@ ps-header.Page-header {
     padding-top: 10px;
 }
 
-.Page-header-logo {
-    display:block;
-}
-
-.Page-header-logo img {
-    width: 405px;
-    height: 110px;
-    max-height: 110px;
-}
-
 .Page-header-top-bar {
     position: relative;
     z-index: 50;
@@ -191,6 +182,7 @@ ps-header.Page-header {
     height: 100%;
     align-items: flex-start;
 }
+
 
 /* Rearranging the persistent player  */
 ps-brightspot-persistent-player.BrightspotPersistentPlayer {
@@ -216,24 +208,32 @@ ps-brightspot-persistent-player.BrightspotPersistentPlayer>.BrightspotPersistent
 }
 
 .BrightspotPersistentPlayer-streamInfo {
-    text-align:right;
+    text-align: right;
     display: flex;
     flex-direction: column;
-    padding:20px;
+    padding: 20px;
 }
-.BrightspotPersistentPlayer-name, .BrightspotPersistentPlayer-programName {
+
+.BrightspotPersistentPlayer-name,
+.BrightspotPersistentPlayer-programName {
     font-family: 'Montserrat';
-    font-weight:bold;
+    font-weight: bold;
 }
-.BrightspotPersistentPlayer-name{
+
+.BrightspotPersistentPlayer-name {
     order: 2;
     font-size: 1.2rem;
-    }
+}
+
 .BrightspotPersistentPlayer-programName {
     order: 1;
     font-size: 1.6rem;
-    }
+}
 
+
+button.Page-header-search-button {
+    display: none;
+}
 
 button.Page-header-search-button {
     display: none;
@@ -245,6 +245,7 @@ button.Page-header-search-button {
 
 .Page-header-nav-bar {}
 
+/* Resizing the WJCT News logo  */
 .Page-header-logo {
     position: absolute;
     z-index: 50;
@@ -252,6 +253,28 @@ button.Page-header-search-button {
 
 [data-header-sticky] .Page-header-logo {
     position: relative;
+}
+
+.Page-header-logo {
+    display: block;
+}
+
+.Page-header-logo img {
+    width: 405px;
+    height: 108px;
+    max-height: 108px;
+    background: url("https://npr.brightspotcdn.com/1a/f2/429727494181954d3fc199ddfd68/wjct-news-header-logo-405pxw.png");
+}
+
+[data-header-sticky] .Page-header-logo img{
+    /* background-image: none; */
+    background-size: 150px, 40px;
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: contain;
+    /* Resize the background image to cover the entire container */
 }
 
 .BrightspotPersistentPlayer-volumeControl {
@@ -295,3 +318,8 @@ button.StreamPill {
     }
 }
 
+@media only screen and (min-device-width: 1240px) {
+[data-header-sticky] ps-header.Page-header-top-bar {
+    /* height: 100%; */
+}
+}
