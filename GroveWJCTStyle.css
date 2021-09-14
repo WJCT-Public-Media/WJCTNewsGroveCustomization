@@ -174,7 +174,41 @@ ps-header.Page-header {
     padding-top: 10px;
 }
 
-/* Fixing the header logo */
+/* Resizing the WJCT News logo  */
+.Page-header-logo {
+    position: absolute;
+    z-index: 50;
+}
+
+[data-header-sticky] .Page-header-logo {
+    position: relative;
+}
+
+.Page-header-logo {
+    display: block;
+}
+
+.Page-header-logo img {
+    width: 405px;
+    height: 108px;
+    max-height: 108px;
+    background: url("https://npr.brightspotcdn.com/1a/f2/429727494181954d3fc199ddfd68/wjct-news-header-logo-405pxw.png");
+}
+
+[data-header-sticky] .Page-header-logo img {
+    width: 150px;
+    height: 40px;
+    max-height:40px;
+    background-position: center;
+/*     Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: contain;
+    /* Resize the background image to cover the entire container */
+
+    
+}
+/* Fixing the WJCT News logo */
 
 [data-toggle-header=hamburger-menu] .Page-header-hamburger-menu {
     z-index: 52;
@@ -189,11 +223,20 @@ ps-header.Page-header {
     align-items: flex-start;
 }
 
+
 /* Fixing the hamburger menu back the way it was */
 .Page-header-hamburger-menu .Page-header-logo img {
     width: auto;
     max-height: 40px;
     height: 40px;
+/*     background-size: 150px, 40px; */
+    background-position: center;
+/*     Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: contain;
+    /* Resize the background image to cover the entire container */
+
 }
 
 .Page-header-hamburger-menu .Page-header-logo {
@@ -257,40 +300,6 @@ button.Page-header-search-button {
 
 .BrightspotPersistentPlayer-drawerControls {
     display: none;
-}
-
-.Page-header-nav-bar {}
-
-/* Resizing the WJCT News logo  */
-.Page-header-logo {
-    position: absolute;
-    z-index: 50;
-}
-
-[data-header-sticky] .Page-header-logo {
-    position: relative;
-}
-
-.Page-header-logo {
-    display: block;
-}
-
-.Page-header-logo img {
-    width: 405px;
-    height: 108px;
-    max-height: 108px;
-    background: url("https://npr.brightspotcdn.com/1a/f2/429727494181954d3fc199ddfd68/wjct-news-header-logo-405pxw.png");
-}
-
-[data-header-sticky] .Page-header-logo img {
-    /* background-image: none; */
-    background-size: 150px, 40px;
-    background-position: center;
-    /* Center the image */
-    background-repeat: no-repeat;
-    /* Do not repeat the image */
-    background-size: contain;
-    /* Resize the background image to cover the entire container */
 }
 
 .BrightspotPersistentPlayer-volumeControl {
