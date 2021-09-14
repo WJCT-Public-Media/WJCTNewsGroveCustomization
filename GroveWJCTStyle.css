@@ -177,7 +177,7 @@ ps-header.Page-header {
 /* Fixing the header logo */
 
 [data-toggle-header=hamburger-menu] .Page-header-hamburger-menu {
-    z-index:52;
+    z-index: 52;
 }
 
 .Page-header-top-bar {
@@ -191,11 +191,14 @@ ps-header.Page-header {
 
 /* Fixing the hamburger menu back the way it was */
 .Page-header-hamburger-menu .Page-header-logo img {
-    width:auto;
-    max-height:40px;
-    height:40px;
+    width: auto;
+    max-height: 40px;
+    height: 40px;
 }
 
+.Page-header-hamburger-menu .Page-header-logo {
+    position: static;
+}
 
 /* Rearranging the persistent player  */
 ps-brightspot-persistent-player.BrightspotPersistentPlayer {
@@ -279,7 +282,7 @@ button.Page-header-search-button {
     background: url("https://npr.brightspotcdn.com/1a/f2/429727494181954d3fc199ddfd68/wjct-news-header-logo-405pxw.png");
 }
 
-[data-header-sticky] .Page-header-logo img{
+[data-header-sticky] .Page-header-logo img {
     /* background-image: none; */
     background-size: 150px, 40px;
     background-position: center;
@@ -332,7 +335,7 @@ button.StreamPill {
 }
 
 @media only screen and (min-device-width: 1240px) {
-[data-header-sticky] ps-header.Page-header-top-bar {
-    /* height: 100%; */
-}
+    [data-header-sticky] ps-header.Page-header-top-bar {
+        /* height: 100%; */
+    }
 }
