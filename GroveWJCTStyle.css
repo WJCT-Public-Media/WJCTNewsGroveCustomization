@@ -291,15 +291,12 @@ ps-brightspot-persistent-player.BrightspotPersistentPlayer>.BrightspotPersistent
 
 
 button.Page-header-search-button {
-    display: none;
-}
-
-button.Page-header-search-button {
-    display: none;
+/*     display: none; */
 }
 
 .BrightspotPersistentPlayer-drawerControls {
-    display: none;
+/*     display: none; */
+margin-left:3rem;
 }
 
 .BrightspotPersistentPlayer-volumeControl {
