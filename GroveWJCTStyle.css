@@ -198,16 +198,17 @@ ps-header.Page-header {
 [data-header-sticky] .Page-header-logo img {
     width: 150px;
     height: 40px;
-    max-height:40px;
+    max-height: 40px;
     background-position: center;
-/*     Center the image */
+    /*     Center the image */
     background-repeat: no-repeat;
     /* Do not repeat the image */
     background-size: contain;
     /* Resize the background image to cover the entire container */
 
-    
+
 }
+
 /* Fixing the WJCT News logo */
 
 [data-toggle-header=hamburger-menu] .Page-header-hamburger-menu {
@@ -229,9 +230,9 @@ ps-header.Page-header {
     width: auto;
     max-height: 40px;
     height: 40px;
-/*     background-size: 150px, 40px; */
+    /*     background-size: 150px, 40px; */
     background-position: center;
-/*     Center the image */
+    /*     Center the image */
     background-repeat: no-repeat;
     /* Do not repeat the image */
     background-size: contain;
@@ -291,12 +292,12 @@ ps-brightspot-persistent-player.BrightspotPersistentPlayer>.BrightspotPersistent
 
 
 button.Page-header-search-button {
-/*     display: none; */
+    /*     display: none; */
 }
 
 .BrightspotPersistentPlayer-drawerControls {
-/*     display: none; */
-margin-left:3rem;
+    /*     display: none; */
+    margin-left: 3rem;
 }
 
 .BrightspotPersistentPlayer-volumeControl {
@@ -309,7 +310,7 @@ button.BrightspotPersistentPlayer-volumeControl-toggle {
     order: 2;
     margin-right: 0;
 }
- 
+
 .BrightspotPersistentPlayer-volumeControl-slider {
     order: 1;
     padding-right: 10px;
@@ -325,6 +326,13 @@ button.BrightspotPersistentPlayer-volumeControl-toggle {
 button.StreamPill {
     background-color: var(--WJCT-tertiary);
     color: white;
+}
+
+@media only screen and (min-width: 768px) {
+    [data-header-sticky] .Page-header-persistent-player {
+        height: 30px;
+        margin-bottom: 1.8rem;
+    }
 }
 
 /* Styles for mobile devices smaller than a tablet */
