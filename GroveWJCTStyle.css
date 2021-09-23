@@ -345,7 +345,10 @@ button.StreamPill {
 }
 
 
-
+@media only screen and (min-width: 768px){}
+.Page-header-persistent-player {
+    padding: 0 30px;
+}
 
 /* Styles for mobile devices smaller than a tablet */
 @media only screen and (max-device-width: 767px) {
