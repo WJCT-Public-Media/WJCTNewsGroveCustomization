@@ -165,7 +165,6 @@ ps-header.Page-header {
     /* Do not repeat the image */
     background-size: cover;
     /* Resize the background image to cover the entire container */
-    display: flex;
     flex-direction: column;
     padding-top: 45px;
 }
