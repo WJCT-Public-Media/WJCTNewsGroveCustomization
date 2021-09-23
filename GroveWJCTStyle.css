@@ -174,56 +174,6 @@ ps-header.Page-header {
     padding-top: 10px;
 }
 
-/* Resizing the WJCT News logo  */
-.Page-header-logo {
-    position: absolute;
-    z-index: 50;
-}
-
-[data-header-sticky] .Page-header-logo {
-    position: relative;
-}
-
-.Page-header-logo {
-    display: block;
-}
-
-.Page-header-logo img {
-    width: 405px;
-    height: 108px;
-    max-height: 108px;
-    background: url("https://npr.brightspotcdn.com/1a/f2/429727494181954d3fc199ddfd68/wjct-news-header-logo-405pxw.png");
-}
-
-[data-header-sticky] .Page-header-logo img {
-    width: 150px;
-    height: 40px;
-    max-height: 40px;
-    background-position: center;
-    /*     Center the image */
-    background-repeat: no-repeat;
-    /* Do not repeat the image */
-    background-size: contain;
-    /* Resize the background image to cover the entire container */
-
-
-}
-
-/* Fixing the WJCT News logo */
-
-[data-toggle-header=hamburger-menu] .Page-header-hamburger-menu {
-    z-index: 52;
-}
-
-.Page-header-top-bar {
-    position: relative;
-    z-index: 51;
-    width: 100%;
-    display: flex;
-    height: 100%;
-    align-items: flex-start;
-}
-
 
 /* Fixing the hamburger menu back the way it was */
 .Page-header-hamburger-menu .Page-header-logo img {
@@ -328,12 +278,74 @@ button.StreamPill {
     color: white;
 }
 
+/* Style for desktop and laptop devices */
+
+@media only screen and (min-device-width: 1025px) {
+    [data-header-sticky] ps-header.Page-header-top-bar {
+        /* height: 100%; */
+    }
+
+    /* Resizing the WJCT News logo  */
+    .Page-header-logo {
+        position: absolute;
+        z-index: 50;
+    }
+
+    [data-header-sticky] .Page-header-logo {
+        position: relative;
+    }
+
+    .Page-header-logo {
+        display: block;
+    }
+
+    .Page-header-logo img {
+        width: 405px;
+        height: 108px;
+        max-height: 108px;
+        background: url("https://npr.brightspotcdn.com/1a/f2/429727494181954d3fc199ddfd68/wjct-news-header-logo-405pxw.png");
+    }
+
+    [data-header-sticky] .Page-header-logo img {
+        width: 150px;
+        height: 40px;
+        max-height: 40px;
+        background-position: center;
+        /*     Center the image */
+        background-repeat: no-repeat;
+        /* Do not repeat the image */
+        background-size: contain;
+        /* Resize the background image to cover the entire container */
+
+
+    }
+
+    /* Fixing the WJCT News logo */
+
+    [data-toggle-header=hamburger-menu] .Page-header-hamburger-menu {
+        z-index: 52;
+    }
+
+    .Page-header-top-bar {
+        position: relative;
+        z-index: 51;
+        width: 100%;
+        display: flex;
+        height: 100%;
+        align-items: flex-start;
+    }
+
+}
+
 @media only screen and (min-width: 768px) {
     [data-header-sticky] .Page-header-persistent-player {
         height: 30px;
         margin-bottom: 1.8rem;
     }
 }
+
+
+
 
 /* Styles for mobile devices smaller than a tablet */
 @media only screen and (max-device-width: 767px) {
@@ -345,11 +357,5 @@ button.StreamPill {
     .Page-header-donate-button.gtm_donate a.Link:after {
         color: white;
         content: "Donate";
-    }
-}
-
-@media only screen and (min-device-width: 1240px) {
-    [data-header-sticky] ps-header.Page-header-top-bar {
-        /* height: 100%; */
     }
 }
