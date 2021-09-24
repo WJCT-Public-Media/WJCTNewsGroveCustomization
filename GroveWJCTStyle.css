@@ -351,6 +351,9 @@ button.StreamPill {
     .BrightspotPersistentPlayer {
         margin-right:30px;
     }
+    .BrightspotPersistentPlayer-name, .BrightspotPersistentPlayer-programName {
+        max-width: calc(100vw - 400px);
+    }
 }
 
 /* Styles for mobile devices smaller than a tablet */
