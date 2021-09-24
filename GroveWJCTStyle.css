@@ -346,7 +346,7 @@ button.StreamPill {
     }
 
     /* Styles for tablet to small desktop browsers */
-    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    @media only screen and (min-width : 768px) and (max-width : 1023px) {
 
         ps-brightspot-persistent-player.BrightspotPersistentPlayer {
             display: flex;
