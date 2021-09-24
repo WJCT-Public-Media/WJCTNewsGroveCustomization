@@ -279,6 +279,13 @@ button.StreamPill {
     color: white;
 }
 
+
+@media only screen and (min-width: 1024px)  and  (max-width: 1239px){
+    .Page-header-logo {
+        margin-left:6rem;
+        max-width:calc(100vw - 500px);
+    }
+
 /* Style for desktop and laptop devices */
 
 @media only screen and (min-device-width: 1024px) {
@@ -338,19 +345,6 @@ button.StreamPill {
 
 }
 
-@media only screen and (min-width: 768px) {
-    [data-header-sticky] .Page-header-persistent-player {
-        height: 30px;
-        margin-bottom: 1.8rem;
-    }
-}
-
-@media only screen and (min-width: 1024px)  and  (max-width: 1239px){
-.Page-header-logo {
-    margin-left:6rem;
-    max-width:calc(100vw - 500px);
-}
-
 /* Styles for tablet to small desktop browsers */
 @media only screen and (min-width: 768px)  and  (max-width: 1023px){
     .BrightspotPersistentPlayer {
@@ -359,6 +353,13 @@ button.StreamPill {
     .BrightspotPersistentPlayer-name, .BrightspotPersistentPlayer-programName {
         max-width: calc(100vw - 400px);
     }    
+}
+
+@media only screen and (min-width: 768px) {
+    [data-header-sticky] .Page-header-persistent-player {
+        height: 30px;
+        margin-bottom: 1.8rem;
+    }
 }
 
 /* Styles for mobile devices smaller than a tablet */
