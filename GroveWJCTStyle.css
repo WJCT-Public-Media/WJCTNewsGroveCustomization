@@ -281,7 +281,7 @@ button.StreamPill {
 
 /* Style for desktop and laptop devices */
 
-@media only screen and (min-device-width: 1025px) {
+@media only screen and (min-device-width: 1024px) {
     [data-header-sticky] ps-header.Page-header-top-bar {
         /* height: 100%; */
     }
