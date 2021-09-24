@@ -354,6 +354,12 @@ button.StreamPill {
     .BrightspotPersistentPlayer-name, .BrightspotPersistentPlayer-programName {
         max-width: calc(100vw - 400px);
     }
+    .Page-header-logo {
+        margin-left:6rem;
+        max-width:calc(100vw - 500px);
+    }
+
+    
 }
 
 /* Styles for mobile devices smaller than a tablet */
@@ -368,3 +374,4 @@ button.StreamPill {
         content: "Donate";
     }
 }
+
