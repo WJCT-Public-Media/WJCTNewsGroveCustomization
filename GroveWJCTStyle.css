@@ -345,6 +345,11 @@ button.StreamPill {
     }
 }
 
+@media only screen and (min-width: 1024px)  and  (max-width: 1239px){
+.Page-header-logo {
+    margin-left:6rem;
+    max-width:calc(100vw - 500px);
+}
 
 /* Styles for tablet to small desktop browsers */
 @media only screen and (min-width: 768px)  and  (max-width: 1023px){
@@ -353,13 +358,7 @@ button.StreamPill {
     }
     .BrightspotPersistentPlayer-name, .BrightspotPersistentPlayer-programName {
         max-width: calc(100vw - 400px);
-    }
-    .Page-header-logo {
-        margin-left:6rem;
-        max-width:calc(100vw - 500px);
-    }
-
-    
+    }    
 }
 
 /* Styles for mobile devices smaller than a tablet */
