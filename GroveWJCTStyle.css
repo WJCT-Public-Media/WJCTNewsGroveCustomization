@@ -343,13 +343,15 @@ button.StreamPill {
         height: 30px;
         margin-bottom: 1.8rem;
     }
+}
+
+
+/* Styles for tablet to small desktop browsers */
+@media only screen and (min-width: 768px)  and  (max-width: 1023px){
     .BrightspotPersistentPlayer {
         margin-right:30px;
     }
 }
-
-
-
 
 /* Styles for mobile devices smaller than a tablet */
 @media only screen and (max-device-width: 767px) {
