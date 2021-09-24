@@ -362,7 +362,8 @@ button.StreamPill {
     }
 
     @media only screen and (min-width: 768px) {
-        [data-header-sticky] .Page-header-persistent-player {
+        /* [data-header-sticky] .Page-header-persistent-player { */
+            .Page-header-persistent-player { 
             height: 30px;
             margin-bottom: 1.8rem;
         }
