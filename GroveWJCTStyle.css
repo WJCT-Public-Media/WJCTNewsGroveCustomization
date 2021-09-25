@@ -1,63 +1,3 @@
-
-
-:root {
-    --WJCT-primary: #006BB6;
-    --WJCT-secondary: #40C4FF;
-    --WJCT-tertiary: #2C3E50;
-    --WJCT-light-text: white;
-    --WJCT-red: #D50000;
-    --bodyFont: "Montserrat", sans-serif;
-    --primaryFont: "Montserrat", sans-serif;
-    --primaryHeadlineFont: "Merriweather", serif;
-    --secondaryHeadlineFont: "Merriweather", serif;
-    --headerBgColor: #006BB6;
-    --buttonHeight: 40px;
-    --WJCT-link: #40C4FF;
-}
-
-html {
-    font-family: var(--primaryFont);
-}
-
-.Page-header-hamburger-menu-content,
-.Page-header-hamburger-menu-content,
-.Page-header-hamburger-menu-wrapper {
-    background-color: var(--WJCT-tertiary);
-}
-
-.BrightspotPersistentPlayer-drawer {
-    background: var(--WJCT-tertiary);
-}
-
-/* Override the solid color background */
-.Page-header-persistent-player {
-    background: transparent;
-}
-
-svg.chevron,
-.NavigationItem-text.gtm_nav_cat,
-.Page-header-hamburger-menu-content .NavigationItem .NavigationLink {
-    color: var(--WJCT-light-text);
-}
-
-.NavigationItem-text.gtm_nav_cat span:hover {
-    color: var(--WJCT-secondary);
-}
-
-nav.DropdownNavigation.gtm_nav .NavigationItem-items-item.gtm_nav_subcat a:hover,
-.Page-header-hamburger-menu-content .NavigationItem .NavigationLink:hover {
-    color: var(--WJCT-link);
-}
-
-.close-x,
-.NavigationItem-more svg {
-    fill: var(--WJCT-light-text);
-}
-
-.Page-header-donate-button.gtm_donate {
-    background-color: var(--WJCT-red);
-}
-
 .Page-header-donate-button.gtm_donate {
     font-size: 1.1rem;
     font-weight: 600;
@@ -335,48 +275,110 @@ button.StreamPill {
         width: 100%;
         display: flex;
         height: 100%;
-        align-items: flex-start;    
+        align-items: flex-start;
     }
 
 }
 
-@media only screen and (min-width: 1024px)  and  (max-width: 1239px){
-.Page-header-logo {
-    margin-left:6rem;
-    max-width:calc(100vw - 500px);
-}
-
-@media only screen and (min-width: 768px) {
-    [data-header-sticky] .Page-header-persistent-player {
-        height: 30px;
-        margin-bottom: 1.8rem;
-    }
-}
-
-/* All breakpoints style */
-/* Desktop Large (1920) breakpoint style */
-/* Desktop Medium (1440) breakpoint style */
-/* Desktop Small (1280) breakpoint style */
-/* Tablet Landscape (1024) breakpoint style */
-@media only screen and (min-width: 768px)  and  (max-width: 1023px){
-    .BrightspotPersistentPlayer {
-        margin-right:30px;
-    }
-    .BrightspotPersistentPlayer-name, .BrightspotPersistentPlayer-programName {
-        max-width: calc(100vw - 400px);
-    }    
-}
-/* Tablet Portrait (768) breakpoint style */
-/* Mobile Landscape (640) breakpoint style */
-@media only screen and (max-device-width: 767px) {
-    .Page-header-donate-button.gtm_donate a.Link {
-        color: transparent;
-        margin-left: -90px;
+@media only screen and (min-width: 1024px) and (max-width: 1239px) {
+    .Page-header-logo {
+        margin-left: 6rem;
+        max-width: calc(100vw - 500px);
     }
 
-    .Page-header-donate-button.gtm_donate a.Link:after {
-        color: white;
-        content: "Donate";
+    @media only screen and (min-width: 768px) {
+        [data-header-sticky] .Page-header-persistent-player {
+            height: 30px;
+            margin-bottom: 1.8rem;
+        }
     }
-}
-/* Mobile Portrait (360) breakpoint style */
+
+    /* All breakpoints style */
+    :root {
+        --WJCT-primary: #006BB6;
+        --WJCT-secondary: #40C4FF;
+        --WJCT-tertiary: #2C3E50;
+        --WJCT-light-text: white;
+        --WJCT-red: #D50000;
+        --bodyFont: "Montserrat", sans-serif;
+        --primaryFont: "Montserrat", sans-serif;
+        --primaryHeadlineFont: "Merriweather", serif;
+        --secondaryHeadlineFont: "Merriweather", serif;
+        --headerBgColor: #006BB6;
+        --buttonHeight: 40px;
+        --WJCT-link: #40C4FF;
+    }
+
+    html {
+        font-family: var(--primaryFont);
+    }
+
+    .Page-header-hamburger-menu-content,
+    .Page-header-hamburger-menu-content,
+    .Page-header-hamburger-menu-wrapper {
+        background-color: var(--WJCT-tertiary);
+    }
+
+    .BrightspotPersistentPlayer-drawer {
+        background: var(--WJCT-tertiary);
+    }
+
+    /* Override the solid color background */
+    .Page-header-persistent-player {
+        background: transparent;
+    }
+
+    svg.chevron,
+    .NavigationItem-text.gtm_nav_cat,
+    .Page-header-hamburger-menu-content .NavigationItem .NavigationLink {
+        color: var(--WJCT-light-text);
+    }
+
+    .NavigationItem-text.gtm_nav_cat span:hover {
+        color: var(--WJCT-secondary);
+    }
+
+    nav.DropdownNavigation.gtm_nav .NavigationItem-items-item.gtm_nav_subcat a:hover,
+    .Page-header-hamburger-menu-content .NavigationItem .NavigationLink:hover {
+        color: var(--WJCT-link);
+    }
+
+    .close-x,
+    .NavigationItem-more svg {
+        fill: var(--WJCT-light-text);
+    }
+
+    .Page-header-donate-button.gtm_donate {
+        background-color: var(--WJCT-red);
+    }
+
+    /* Desktop Large (1920) breakpoint style */
+    /* Desktop Medium (1440) breakpoint style */
+    /* Desktop Small (1280) breakpoint style */
+    /* Tablet Landscape (1024) breakpoint style */
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+        .BrightspotPersistentPlayer {
+            margin-right: 30px;
+        }
+
+        .BrightspotPersistentPlayer-name,
+        .BrightspotPersistentPlayer-programName {
+            max-width: calc(100vw - 400px);
+        }
+    }
+
+    /* Tablet Portrait (768) breakpoint style */
+    /* Mobile Landscape (640) breakpoint style */
+    @media only screen and (max-device-width: 767px) {
+        .Page-header-donate-button.gtm_donate a.Link {
+            color: transparent;
+            margin-left: -90px;
+        }
+
+        .Page-header-donate-button.gtm_donate a.Link:after {
+            color: white;
+            content: "Donate";
+        }
+    }
+
+    /* Mobile Portrait (360) breakpoint style */
