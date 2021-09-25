@@ -27,11 +27,6 @@ html {
     background: var(--WJCT-tertiary);
 }
 
-/* Override the solid color background */
-.Page-header-persistent-player {
-    background: transparent;
-}
-
 svg.chevron,
 .NavigationItem-text.gtm_nav_cat,
 .Page-header-hamburger-menu-content .NavigationItem .NavigationLink {
@@ -276,6 +271,7 @@ button.StreamPill {
 
 /* Desktop Small (1280) breakpoint style */
 @media only screen and (min-device-width: 1280px) {
+
     /* Resizing the WJCT News logo  */
     .Page-header-logo {
         position: absolute;
@@ -323,10 +319,11 @@ button.StreamPill {
         height: 100%;
         align-items: flex-start;
     }
+
     .BrightspotPersistentPlayer {
         padding-right: 0 !important;
     }
-    
+
 }
 
 /* ################################################################################################ */
@@ -337,14 +334,19 @@ button.StreamPill {
 /* ################################################################################################ */
 
 /* Tablet Landscape (1024) breakpoint style */
-@media only screen and (min-device-width: 1024px) {
+@media only screen and (min-device-width: 1024px) {}
 
-}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {}
 
 /* Tablet Portrait (768) breakpoint style */
 @media only screen and (min-width: 768px) {
     .BrightspotPersistentPlayer {
         padding-right: 30px;
+    }
+
+    /* Override the solid color background */
+    .Page-header-persistent-player {
+        background: transparent;
     }
 
     [data-header-sticky] .Page-header-persistent-player {
@@ -355,9 +357,16 @@ button.StreamPill {
 
 /* Mobile Landscape (640) breakpoint style */
 @media only screen and (max-device-width: 767px) {
+    .BrightspotPersistentPlayer-drawerToggle .drawer-mobile-trigger {
+        width: 0px;
+    }
     .Page-header-donate-button.gtm_donate a.Link {
         color: transparent;
         margin-left: -90px;
+    }
+
+    .Page-header-persistent-player {
+        background-color: var(--WJCT-tertiary);
     }
 
     .Page-header-donate-button.gtm_donate a.Link:after {
