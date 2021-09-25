@@ -57,6 +57,31 @@ nav.DropdownNavigation.gtm_nav .NavigationItem-items-item.gtm_nav_subcat a:hover
     background-color: var(--WJCT-red);
 }
 
+.Page-header-donate-button.gtm_donate {
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: .25em;
+    text-transform: uppercase;
+}
+
+.Page-footer-branding {
+    background-color: var(--WJCT-tertiary);
+}
+
+ul.NavigationItem-items {
+    padding: 0px !important;
+}
+
+nav.DropdownNavigation.gtm_nav li.NavigationItem-items-item.gtm_nav_subcat:hover {
+    background-color: rgba(44, 62, 80, .2);
+    color: var(--WJCT-primary);
+}
+
+.Page-header-nav-bar {
+    background: none;
+}
+
 /* Desktop Large (1920) breakpoint style */
 /* Desktop Medium (1440) breakpoint style */
 /* Desktop Small (1280) breakpoint style */
@@ -88,30 +113,9 @@ nav.DropdownNavigation.gtm_nav .NavigationItem-items-item.gtm_nav_subcat a:hover
 
 /* Mobile Portrait (360) breakpoint style */
 
-.Page-header-donate-button.gtm_donate {
-    font-size: 1.1rem;
-    font-weight: 600;
-    line-height: 1.2;
-    letter-spacing: .25em;
-    text-transform: uppercase;
-}
+/* End of breakpoints */
 
-.Page-footer-branding {
-    background-color: var(--WJCT-tertiary);
-}
 
-ul.NavigationItem-items {
-    padding: 0px !important;
-}
-
-nav.DropdownNavigation.gtm_nav li.NavigationItem-items-item.gtm_nav_subcat:hover {
-    background-color: rgba(44, 62, 80, .2);
-    color: var(--WJCT-primary);
-}
-
-.Page-header-nav-bar {
-    background: none;
-}
 
 /* Removed white bar from bottom of last navigation item.
 li.NavigationItem-items-item.gtm_nav_subcat:last-child a.NavigationLink{
