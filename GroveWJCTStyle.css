@@ -263,7 +263,9 @@ button.StreamPill {
     background-color: var(--WJCT-tertiary);
     color: white;
 }
-
+    .BrightspotPersistentPlayer {
+        padding-right: 10px;
+    }
 /* End of all breakpoints style */
 
 /* Desktop Large (1920) breakpoint style */
