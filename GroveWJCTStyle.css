@@ -82,40 +82,7 @@ nav.DropdownNavigation.gtm_nav li.NavigationItem-items-item.gtm_nav_subcat:hover
     background: none;
 }
 
-/* Desktop Large (1920) breakpoint style */
-/* Desktop Medium (1440) breakpoint style */
-/* Desktop Small (1280) breakpoint style */
-/* Tablet Landscape (1024) breakpoint style */
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-    .BrightspotPersistentPlayer {
-        margin-right: 30px;
-    }
-
-    .BrightspotPersistentPlayer-name,
-    .BrightspotPersistentPlayer-programName {
-        max-width: calc(100vw - 400px);
-    }
-}
-
-/* Tablet Portrait (768) breakpoint style */
-/* Mobile Landscape (640) breakpoint style */
-@media only screen and (max-device-width: 767px) {
-    .Page-header-donate-button.gtm_donate a.Link {
-        color: transparent;
-        margin-left: -90px;
-    }
-
-    .Page-header-donate-button.gtm_donate a.Link:after {
-        color: white;
-        content: "Donate";
-    }
-}
-
-/* Mobile Portrait (360) breakpoint style */
-
-/* End of breakpoints */
-
-
+/* End of all breakpoints style */
 
 /* Removed white bar from bottom of last navigation item.
 li.NavigationItem-items-item.gtm_nav_subcat:last-child a.NavigationLink{
@@ -387,3 +354,36 @@ button.StreamPill {
         }
     }
 }
+
+/* Desktop Large (1920) breakpoint style */
+/* Desktop Medium (1440) breakpoint style */
+/* Desktop Small (1280) breakpoint style */
+/* Tablet Landscape (1024) breakpoint style */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .BrightspotPersistentPlayer {
+        margin-right: 30px;
+    }
+
+    .BrightspotPersistentPlayer-name,
+    .BrightspotPersistentPlayer-programName {
+        max-width: calc(100vw - 400px);
+    }
+}
+
+/* Tablet Portrait (768) breakpoint style */
+/* Mobile Landscape (640) breakpoint style */
+@media only screen and (max-device-width: 767px) {
+    .Page-header-donate-button.gtm_donate a.Link {
+        color: transparent;
+        margin-left: -90px;
+    }
+
+    .Page-header-donate-button.gtm_donate a.Link:after {
+        color: white;
+        content: "Donate";
+    }
+}
+
+/* Mobile Portrait (360) breakpoint style */
+
+/* End of Style sheet */
