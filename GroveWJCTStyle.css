@@ -138,6 +138,9 @@ button.BrightspotPersistentPlayer-volumeControl-toggle {
     background-color: var(--WJCT-secondary);
     border-radius: 5px;
 }
+    .BrightspotPersistentPlayer-drawerToggle {
+        padding-right: 0px;
+    }
 
 /* Make Next Up disappear */
 .BrightspotPersistentPlayer-tabletDesktopExtraInfo {
@@ -334,9 +337,11 @@ button.StreamPill {
 /* ################################################################################################ */
 
 /* Tablet Landscape (1024) breakpoint style */
-@media only screen and (min-device-width: 1024px) {}
-
-@media only screen and (min-width: 768px) and (max-width: 1023px) {}
+@media only screen and (min-width: 1024px) {
+    .BrightspotPersistentPlayer-drawerToggle {
+        padding-right: 12px;
+    }    
+}
 
 /* Tablet Portrait (768) breakpoint style */
 @media only screen and (min-width: 768px) {
@@ -357,9 +362,6 @@ button.StreamPill {
 
 /* Mobile Landscape (640) breakpoint style */
 @media only screen and (max-device-width: 767px) {
-    .BrightspotPersistentPlayer-drawerToggle .drawer-mobile-trigger {
-        width: 0px;
-    }
     .Page-header-donate-button.gtm_donate a.Link {
         color: transparent;
         margin-left: -90px;
