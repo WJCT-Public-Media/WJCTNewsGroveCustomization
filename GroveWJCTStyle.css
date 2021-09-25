@@ -81,32 +81,29 @@ nav.DropdownNavigation.gtm_nav li.NavigationItem-items-item.gtm_nav_subcat:hover
     background: none;
 }
 
-/* End of all breakpoints style */
-
-/* Removed white bar from bottom of last navigation item. */
-/* 
-li.NavigationItem-items-item.gtm_nav_subcat:last-child a.NavigationLink{
-border-bottom: 0px;
-} 
-*/
-
 /* Removed white bar from bottom of all navigation items. */
-
 .Page-header-nav-bar .NavigationItem .NavigationItem-items .NavigationLink {
     border-bottom: 0px;
 }
+
+/* Removed white bar from bottom of last navigation item. */
+/* li.NavigationItem-items-item.gtm_nav_subcat:last-child a.NavigationLink{
+border-bottom: 0px;
+}
+*/
+/* Decided it's better off with no white bars underneath */
 
 /* Change color of nav menu drop down */
 ul.NavigationItem-items {
     background-color: var(--WJCT-tertiary) !important;
 }
 
+/* Change color of nav menu links to white */
 .NavigationItem .NavigationLink {
     color: white;
 }
 
 /* Add light blue line above categories */
-
 .PromoA-category,
 .PromoB-category,
 .PromoC-category {
@@ -114,6 +111,16 @@ ul.NavigationItem-items {
     border-top-color: var(--WJCT-secondary);
     border-top-style: solid;
 }
+
+
+/* End of all breakpoints style */
+/* ################################################################################################ */
+/* ################################################################################################ */
+/* ################################################################################################ */
+/* ################################################################################################ */
+/* ################################################################################################ */
+/* ################################################################################################ */
+
 
 .NavigationItem-text {
     font-weight: 700;
