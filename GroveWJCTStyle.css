@@ -89,8 +89,7 @@ nav.DropdownNavigation.gtm_nav li.NavigationItem-items-item.gtm_nav_subcat:hover
 /* Removed white bar from bottom of last navigation item. */
 /* li.NavigationItem-items-item.gtm_nav_subcat:last-child a.NavigationLink{
 border-bottom: 0px;
-}
-*/
+} */
 /* Decided it's better off with no white bars underneath */
 
 /* Change color of nav menu drop down */
@@ -182,15 +181,7 @@ ps-header.Page-header {
     padding-bottom: 1rem;
 }
 
-/* End of all breakpoints style */
-/* ################################################################################################ */
-/* ################################################################################################ */
-/* ################################################################################################ */
-/* ################################################################################################ */
-/* ################################################################################################ */
-/* ################################################################################################ */
-
-/* Rearranging the persistent player  */
+/* START Persistent player rearranging and style */
 ps-brightspot-persistent-player.BrightspotPersistentPlayer {
     display: flex;
     flex-direction: row;
@@ -217,7 +208,11 @@ ps-brightspot-persistent-player.BrightspotPersistentPlayer>.BrightspotPersistent
     text-align: right;
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 2rem;
+}
+
+.BrightspotPersistentPlayer-playerControls {
+    margin-right: 0;
 }
 
 .BrightspotPersistentPlayer-name,
@@ -228,7 +223,7 @@ ps-brightspot-persistent-player.BrightspotPersistentPlayer>.BrightspotPersistent
 
 .BrightspotPersistentPlayer-name {
     order: 2;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 .BrightspotPersistentPlayer-programName {
@@ -236,13 +231,7 @@ ps-brightspot-persistent-player.BrightspotPersistentPlayer>.BrightspotPersistent
     font-size: 1.6rem;
 }
 
-
-button.Page-header-search-button {
-    /*     display: none; */
-}
-
 .BrightspotPersistentPlayer-drawerControls {
-    /* display: none; */
     margin-left: 3rem;
 }
 
@@ -263,9 +252,12 @@ button.BrightspotPersistentPlayer-volumeControl-toggle {
     padding-left: 10px;
 }
 
-.BrightspotPersistentPlayer-playerControls {
-    margin-right: 0;
-}
+/* END Persistent player rearranging and style */
+
+/* Hide the magnifying lens. Decided not to go with it. */
+/* button.Page-header-search-button {
+        display: none;
+} */
 
 /* Player button formatting */
 
@@ -273,6 +265,18 @@ button.StreamPill {
     background-color: var(--WJCT-tertiary);
     color: white;
 }
+
+
+/* End of all breakpoints style */
+/* ################################################################################################ */
+/* ################################################################################################ */
+/* ################################################################################################ */
+/* ################################################################################################ */
+/* ################################################################################################ */
+/* ################################################################################################ */
+
+/* Desktop Large (1920) breakpoint style */
+@media only screen and (min-device-width: 1920px) {}
 
 /* Style for desktop and laptop devices */
 
@@ -347,7 +351,6 @@ button.StreamPill {
     }
 }
 
-/* Desktop Large (1920) breakpoint style */
 /* Desktop Medium (1440) breakpoint style */
 /* Desktop Small (1280) breakpoint style */
 /* Tablet Landscape (1024) breakpoint style */
@@ -384,19 +387,19 @@ button.StreamPill {
 /* Not sure what these were supposed to do, but they don't seem to work now. */
 /* Fixing the hamburger menu back the way it was */
 .Page-header-hamburger-menu .Page-header-logo img {
-/*     width: auto; */
-/*     max-height: 40px; */
-/*     height: 40px; */
-/*         background-size: 150px, 40px; */
-/*     background-position: center; */
+    /*     width: auto; */
+    /*     max-height: 40px; */
+    /*     height: 40px; */
+    /*         background-size: 150px, 40px; */
+    /*     background-position: center; */
     /*     Center the image */
-/*     background-repeat: no-repeat; */
+    /*     background-repeat: no-repeat; */
     /* Do not repeat the image */
-/*     background-size: contain; */
+    /*     background-size: contain; */
     /* Resize the background image to cover the entire container */
 
 }
 
 .Page-header-hamburger-menu .Page-header-logo {
-/*     position: static; */
+    /*     position: static; */
 }
