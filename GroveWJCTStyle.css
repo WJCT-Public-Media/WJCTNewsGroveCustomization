@@ -1,3 +1,5 @@
+
+
 :root {
     --WJCT-primary: #006BB6;
     --WJCT-secondary: #40C4FF;
@@ -344,7 +346,18 @@ button.StreamPill {
     max-width:calc(100vw - 500px);
 }
 
-/* Styles for tablet to small desktop browsers */
+@media only screen and (min-width: 768px) {
+    [data-header-sticky] .Page-header-persistent-player {
+        height: 30px;
+        margin-bottom: 1.8rem;
+    }
+}
+
+/* All breakpoints style */
+/* Desktop Large (1920) breakpoint style */
+/* Desktop Medium (1440) breakpoint style */
+/* Desktop Small (1280) breakpoint style */
+/* Tablet Landscape (1024) breakpoint style */
 @media only screen and (min-width: 768px)  and  (max-width: 1023px){
     .BrightspotPersistentPlayer {
         margin-right:30px;
@@ -353,15 +366,8 @@ button.StreamPill {
         max-width: calc(100vw - 400px);
     }    
 }
-
-@media only screen and (min-width: 768px) {
-    [data-header-sticky] .Page-header-persistent-player {
-        height: 30px;
-        margin-bottom: 1.8rem;
-    }
-}
-
-/* Styles for mobile devices smaller than a tablet */
+/* Tablet Portrait (768) breakpoint style */
+/* Mobile Landscape (640) breakpoint style */
 @media only screen and (max-device-width: 767px) {
     .Page-header-donate-button.gtm_donate a.Link {
         color: transparent;
@@ -373,4 +379,4 @@ button.StreamPill {
         content: "Donate";
     }
 }
-
+/* Mobile Portrait (360) breakpoint style */
