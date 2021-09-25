@@ -266,25 +266,27 @@ button.StreamPill {
     color: white;
 }
 
-
 /* End of all breakpoints style */
-/* ################################################################################################ */
-/* ################################################################################################ */
-/* ################################################################################################ */
-/* ################################################################################################ */
-/* ################################################################################################ */
-/* ################################################################################################ */
 
 /* Desktop Large (1920) breakpoint style */
 @media only screen and (min-device-width: 1920px) {}
 
 /* Desktop Medium (1440) breakpoint style */
+@media only screen and (min-device-width: 1440px) {}
+
 /* Desktop Small (1280) breakpoint style */
+@media only screen and (min-device-width: 1280px) {}
+
+/* ################################################################################################ */
+/* ################################################################################################ */
+/* ################################################################################################ */
+/* ################################################################################################ */
+/* ################################################################################################ */
+/* ################################################################################################ */
+
 /* Tablet Landscape (1024) breakpoint style */
-
-/* Style for desktop and laptop devices */
-
 @media only screen and (min-device-width: 1024px) {
+
     /* Resizing the WJCT News logo  */
     .Page-header-logo {
         position: absolute;
@@ -340,13 +342,6 @@ button.StreamPill {
         margin-left: 6rem;
         max-width: calc(100vw - 500px);
     }
-
-    @media only screen and (min-width: 768px) {
-        [data-header-sticky] .Page-header-persistent-player {
-            height: 30px;
-            margin-bottom: 1.8rem;
-        }
-    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -361,6 +356,13 @@ button.StreamPill {
 }
 
 /* Tablet Portrait (768) breakpoint style */
+@media only screen and (min-width: 768px) {
+    [data-header-sticky] .Page-header-persistent-player {
+        height: 30px;
+        margin-bottom: 1.8rem;
+    }
+}
+
 /* Mobile Landscape (640) breakpoint style */
 @media only screen and (max-device-width: 767px) {
     .Page-header-donate-button.gtm_donate a.Link {
