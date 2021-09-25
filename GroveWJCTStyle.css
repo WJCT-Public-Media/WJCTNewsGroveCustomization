@@ -323,7 +323,9 @@ button.StreamPill {
         height: 100%;
         align-items: flex-start;
     }
-
+    .BrightspotPersistentPlayer {
+        padding-right: 0 !important;
+    }
     
 }
 
@@ -337,17 +339,14 @@ button.StreamPill {
 /* Tablet Landscape (1024) breakpoint style */
 @media only screen and (min-device-width: 1024px) {
 
-
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-    .BrightspotPersistentPlayer {
-        margin-right: 30px;
-    }
 }
 
 /* Tablet Portrait (768) breakpoint style */
 @media only screen and (min-width: 768px) {
+    .BrightspotPersistentPlayer {
+        padding-right: 30px;
+    }
+
     [data-header-sticky] .Page-header-persistent-player {
         height: 30px;
         margin-bottom: 1.8rem;
