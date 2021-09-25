@@ -278,13 +278,13 @@ button.StreamPill {
 /* Desktop Large (1920) breakpoint style */
 @media only screen and (min-device-width: 1920px) {}
 
+/* Desktop Medium (1440) breakpoint style */
+/* Desktop Small (1280) breakpoint style */
+/* Tablet Landscape (1024) breakpoint style */
+
 /* Style for desktop and laptop devices */
 
 @media only screen and (min-device-width: 1024px) {
-    [data-header-sticky] ps-header.Page-header-top-bar {
-        /* height: 100%; */
-    }
-
     /* Resizing the WJCT News logo  */
     .Page-header-logo {
         position: absolute;
@@ -316,8 +316,6 @@ button.StreamPill {
         /* Do not repeat the image */
         background-size: contain;
         /* Resize the background image to cover the entire container */
-
-
     }
 
     /* Fixing the WJCT News logo */
@@ -351,9 +349,6 @@ button.StreamPill {
     }
 }
 
-/* Desktop Medium (1440) breakpoint style */
-/* Desktop Small (1280) breakpoint style */
-/* Tablet Landscape (1024) breakpoint style */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .BrightspotPersistentPlayer {
         margin-right: 30px;
