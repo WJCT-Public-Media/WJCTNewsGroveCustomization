@@ -1,6 +1,5 @@
 <?php 
     $random = mt_rand(100, 999);
-
-    header('Location: /GroveWJCTStyle.css?rand=' . $random);
-  exit;
+    header('Location: https://rayhollister.github.io/WJCTGroveCustomization/GroveWJCTStyle.css?rand=' . $random);
+    exit;
 ?>
