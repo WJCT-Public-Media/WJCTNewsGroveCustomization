@@ -190,25 +190,6 @@ ps-header.Page-header {
 /* ################################################################################################ */
 /* ################################################################################################ */
 
-/* Fixing the hamburger menu back the way it was */
-.Page-header-hamburger-menu .Page-header-logo img {
-    width: auto;
-    max-height: 40px;
-    height: 40px;
-    /*     background-size: 150px, 40px; */
-    background-position: center;
-    /*     Center the image */
-    background-repeat: no-repeat;
-    /* Do not repeat the image */
-    background-size: contain;
-    /* Resize the background image to cover the entire container */
-
-}
-
-.Page-header-hamburger-menu .Page-header-logo {
-    position: static;
-}
-
 /* Rearranging the persistent player  */
 ps-brightspot-persistent-player.BrightspotPersistentPlayer {
     display: flex;
@@ -230,7 +211,6 @@ ps-brightspot-persistent-player.BrightspotPersistentPlayer>.BrightspotPersistent
 
 ps-brightspot-persistent-player.BrightspotPersistentPlayer>.BrightspotPersistentPlayer-drawerControls {
     order: 4;
-    /* margin-right: 1rem; */
 }
 
 .BrightspotPersistentPlayer-streamInfo {
@@ -399,3 +379,24 @@ button.StreamPill {
 /* Mobile Portrait (360) breakpoint style */
 
 /* End of Style sheet */
+
+
+/* Not sure what these were supposed to do, but they don't seem to work now. */
+/* Fixing the hamburger menu back the way it was */
+.Page-header-hamburger-menu .Page-header-logo img {
+/*     width: auto; */
+/*     max-height: 40px; */
+/*     height: 40px; */
+/*         background-size: 150px, 40px; */
+/*     background-position: center; */
+    /*     Center the image */
+/*     background-repeat: no-repeat; */
+    /* Do not repeat the image */
+/*     background-size: contain; */
+    /* Resize the background image to cover the entire container */
+
+}
+
+.Page-header-hamburger-menu .Page-header-logo {
+/*     position: static; */
+}
