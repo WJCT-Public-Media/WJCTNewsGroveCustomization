@@ -112,21 +112,12 @@ ul.NavigationItem-items {
     border-top-style: solid;
 }
 
-
-/* End of all breakpoints style */
-/* ################################################################################################ */
-/* ################################################################################################ */
-/* ################################################################################################ */
-/* ################################################################################################ */
-/* ################################################################################################ */
-/* ################################################################################################ */
-
-
+/* Make the navigation text font bold */
 .NavigationItem-text {
     font-weight: 700;
 }
 
-/* Make transparent cover disappear and make volume button yellow/black */
+/* Make volume button yellow/black and make transparent cover disappear */
 button.BrightspotPersistentPlayer-volumeControl-toggle {
     color: black;
     background-color: #FFCC00;
@@ -136,14 +127,16 @@ button.BrightspotPersistentPlayer-volumeControl-toggle {
     width: 30px;
 }
 
-.noUi-target.noUi-rtl.noUi-vertical.noUi-txt-dir-ltr,
-.noUi-handle.noUi-handle-lower {
-    width: 8px;
-}
-
+/* Get rid of ugly overlay on volume control */
 .BrightspotPersistentPlayer-volumeControl-toggle:after,
 .BrightspotPersistentPlayer-volumeControl-toggleMobile:after {
     opacity: 0;
+}
+
+/* Make the volume control thicker */
+.noUi-target.noUi-rtl.noUi-vertical.noUi-txt-dir-ltr,
+.noUi-handle.noUi-handle-lower {
+    width: 8px;
 }
 
 /* Change All Streams button to secondary color and rounded rectangle */
@@ -163,6 +156,7 @@ button.BrightspotPersistentPlayer-volumeControl-toggle {
     height: var(--buttonHeight);
 }
 
+/* Make the buttons (hamburger and search) white */
 .Page-header-search-button-mobile .icon-magnify,
 .Page-header-search-button .icon-magnify,
 .Page-header-menu-trigger .burger-menu,
@@ -170,7 +164,7 @@ button.BrightspotPersistentPlayer-volumeControl-toggle {
     fill: white;
 }
 
-/* Change the background to the image: */
+/* Change the header background from a color to an image */
 ps-header.Page-header {
     background-image: url("http://npr-brightspot.s3.amazonaws.com/aa/4d/59ec9482439f9ab1e1a6bbc35122/wjct-news-header-image.png");
     background-repeat: no-repeat;
@@ -182,10 +176,19 @@ ps-header.Page-header {
     padding-top: 45px;
 }
 
+/* Making the sticky page header thinner */
 [data-header-sticky] ps-header.Page-header {
-    padding-top: 10px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
+/* End of all breakpoints style */
+/* ################################################################################################ */
+/* ################################################################################################ */
+/* ################################################################################################ */
+/* ################################################################################################ */
+/* ################################################################################################ */
+/* ################################################################################################ */
 
 /* Fixing the hamburger menu back the way it was */
 .Page-header-hamburger-menu .Page-header-logo img {
