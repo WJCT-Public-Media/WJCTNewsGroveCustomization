@@ -1,4 +1,3 @@
-/* All breakpoints style */
 :root {
     --WJCT-primary: #006BB6;
     --WJCT-secondary: #40C4FF;
@@ -84,10 +83,10 @@ nav.DropdownNavigation.gtm_nav li.NavigationItem-items-item.gtm_nav_subcat:hover
 
 /* End of all breakpoints style */
 
-/* Removed white bar from bottom of last navigation item.
+/* /* Removed white bar from bottom of last navigation item. */
 li.NavigationItem-items-item.gtm_nav_subcat:last-child a.NavigationLink{
 border-bottom: 0px;
-} */
+}
 /* Removed white bar from bottom of all navigation items. */
 
 .Page-header-nav-bar .NavigationItem .NavigationItem-items .NavigationLink {
