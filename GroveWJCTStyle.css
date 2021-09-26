@@ -413,6 +413,13 @@ margin-left:425px;
 
 }
 
-.Page-header-hamburger-menu .Page-header-logo {
-    /*     position: static; */
+/* Homepage specific styles */
+div#latestnewscast {
+    text-align: center;
+    line-height: 3;
 }
+
+.HtmlModule {
+    margin-bottom: 0px;
+}
+
