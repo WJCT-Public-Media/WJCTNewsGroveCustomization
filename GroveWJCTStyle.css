@@ -101,9 +101,15 @@ ul.NavigationItem-items {
 .PromoA-category,
 .PromoB-category,
 .PromoC-category {
-    padding-top: 15px;
+    padding-top: 10px;
     border-top-color: var(--WJCT-secondary);
     border-top-style: solid;
+}
+
+.PromoA-media,
+.PromoB-media,
+.PromoC-media {
+    padding-bottom: 10px;
 }
 
 /* Make the navigation text font bold */
