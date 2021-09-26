@@ -150,7 +150,7 @@ button.BrightspotPersistentPlayer-volumeControl-toggle {
 
 /* Make Next Up disappear */
 .BrightspotPersistentPlayer-tabletDesktopExtraInfo {
-    display: none;
+/*     display: none; */
 }
 
 /* Make all buttons the same height */
@@ -280,11 +280,21 @@ button.StreamPill {
 @media only screen and (min-device-width: 1920px) {}
 
 /* Desktop Medium (1440) breakpoint style */
-@media only screen and (min-device-width: 1440px) {}
+@media only screen and (min-width: 1440px) {
+[data-header-sticky] .BrightspotPersistentPlayer-name, [data-header-sticky].BrightspotPersistentPlayer-programName {
+    max-width: 700px;
+}
+
+}
 
 /* Desktop Small (1280) breakpoint style */
 @media only screen and (min-device-width: 1280px) {
-
+ .BrightspotPersistentPlayer-name, .BrightspotPersistentPlayer-programName {
+    max-width:250px;
+}   
+.BrightspotPersistentPlayer-tabletDesktopExtraInfo {    
+margin-left:425px;
+    }   
     /* Resizing the WJCT News logo  */
     .Page-header-logo {
         position: absolute;
