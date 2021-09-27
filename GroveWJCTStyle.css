@@ -281,7 +281,7 @@ button.StreamPill {
 /* Breakpoint specific styles */
 
 /* Desktop Large (1920) breakpoint style */
-@media only screen and (min-device-width: 1920px) {}
+@media only screen and (min-width: 1920px) {}
 
 /* Desktop Medium (1440) breakpoint style */
 @media only screen and (min-width: 1440px) {
@@ -294,7 +294,7 @@ button.StreamPill {
 }
 
 /* Desktop Small (1280) breakpoint style */
-@media only screen and (min-device-width: 1280px) {
+@media only screen and (min-width: 1280px) {
 
     .BrightspotPersistentPlayer-name,
     .BrightspotPersistentPlayer-programName {
@@ -384,7 +384,7 @@ button.StreamPill {
 }
 
 /* Mobile Landscape (640) breakpoint style */
-@media only screen and (max-device-width: 767px) {
+@media only screen and (max-width: 767px) {
     .Page-header-donate-button.gtm_donate a.Link {
         color: transparent;
         margin-left: -90px;
@@ -438,7 +438,9 @@ div#latestnewscast {
     font-family: var(--secondaryHeadlineFont), Arial, Helvetica, sans-serif;
     font-size: 1.3rem;
 }
-
+.ListF {
+    padding: 0 20px;
+}
 @media only screen and (min-width: 768px) {
     [class$=-column] .ListF {
         margin-right: 0px;
