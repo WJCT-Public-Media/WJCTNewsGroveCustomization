@@ -146,13 +146,14 @@ button.BrightspotPersistentPlayer-volumeControl-toggle {
     background-color: var(--WJCT-secondary);
     border-radius: 5px;
 }
-    .BrightspotPersistentPlayer-drawerToggle {
-        padding-right: 0px;
-    }
+
+.BrightspotPersistentPlayer-drawerToggle {
+    padding-right: 0px;
+}
 
 /* Make Next Up disappear */
 .BrightspotPersistentPlayer-tabletDesktopExtraInfo {
-/*     display: none; */
+    /*     display: none; */
 }
 
 /* Make all buttons the same height */
@@ -271,9 +272,10 @@ button.StreamPill {
     background-color: var(--WJCT-tertiary);
     color: white;
 }
-    .BrightspotPersistentPlayer {
-        padding-right: 10px;
-    }
+
+.BrightspotPersistentPlayer {
+    padding-right: 10px;
+}
 
 /* ############################ */
 /* Breakpoint specific styles */
@@ -283,20 +285,26 @@ button.StreamPill {
 
 /* Desktop Medium (1440) breakpoint style */
 @media only screen and (min-width: 1440px) {
-[data-header-sticky] .BrightspotPersistentPlayer-name, [data-header-sticky].BrightspotPersistentPlayer-programName {
-    max-width: 700px;
-}
+
+    [data-header-sticky] .BrightspotPersistentPlayer-name,
+    [data-header-sticky].BrightspotPersistentPlayer-programName {
+        max-width: 700px;
+    }
 
 }
 
 /* Desktop Small (1280) breakpoint style */
 @media only screen and (min-device-width: 1280px) {
- .BrightspotPersistentPlayer-name, .BrightspotPersistentPlayer-programName {
-    max-width:250px;
-}   
-.BrightspotPersistentPlayer-tabletDesktopExtraInfo {    
-margin-left:425px;
-    }   
+
+    .BrightspotPersistentPlayer-name,
+    .BrightspotPersistentPlayer-programName {
+        max-width: 250px;
+    }
+
+    .BrightspotPersistentPlayer-tabletDesktopExtraInfo {
+        margin-left: 425px;
+    }
+
     /* Resizing the WJCT News logo  */
     .Page-header-logo {
         position: absolute;
@@ -355,7 +363,7 @@ margin-left:425px;
 @media only screen and (min-width: 1024px) {
     .BrightspotPersistentPlayer-drawerToggle {
         padding-right: 12px;
-    }    
+    }
 }
 
 /* Tablet Portrait (768) breakpoint style */
@@ -423,3 +431,16 @@ div#latestnewscast {
     margin-bottom: 0px;
 }
 
+/* Adjusting the FCC promo section */
+.Enhancement .PromoXSmall-title .Link {
+    text-decoration: none;
+    color: var(--primaryTextColor);
+    font-family: var(--secondaryHeadlineFont), Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+}
+
+@media only screen and (min-width: 768px) {
+    [class$=-column] .ListF {
+        margin-right: 0px;
+    }
+}
