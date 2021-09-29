@@ -302,6 +302,10 @@ figcaption.Figure-caption,
     font-family: var(--primaryFont);
 }
 
+.ArticlePage-datePublished {
+    font-style: italic
+}
+
 .BrightspotPersistentPlayer-schedule,
 .PromoA-byline,
 .PromoB-byline,
