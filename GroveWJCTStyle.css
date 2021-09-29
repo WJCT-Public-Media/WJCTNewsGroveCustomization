@@ -61,8 +61,12 @@ nav.DropdownNavigation.gtm_nav .NavigationItem-items-item.gtm_nav_subcat a:hover
     text-transform: uppercase;
 }
 
-.Page-footer-branding {
+footer.Page-footer {
     background-color: var(--WJCT-tertiary);
+}
+
+.Page-footer-branding {
+    /* background-color: var(--WJCT-tertiary); */
 }
 
 ul.NavigationItem-items {
@@ -180,6 +184,7 @@ ps-header.Page-header {
     /* display: flex; */
     /* flex-direction: column; */
     padding-top: 45px;
+    border-bottom: none;
 }
 
 /* Making the sticky page header thinner */
@@ -275,10 +280,6 @@ button.StreamPill {
 
 .BrightspotPersistentPlayer {
     padding-right: 10px;
-}
-
-.Page-header {
-    border-bottom: none;
 }
 
 .BrightspotPersistentPlayer-schedule,
