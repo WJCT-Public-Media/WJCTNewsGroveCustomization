@@ -481,8 +481,8 @@ div#latestnewscast {
     margin-bottom: 0px;
 }
 
-/* Adjusting the FCC promo section */
-.Enhancement .PromoXSmall-title .Link {
+/* Adjusting the FCC promo & Latest Stories section */
+.PromoXSmall-title .Link {
     text-decoration: none;
     color: var(--primaryTextColor);
     font-family: var(--secondaryHeadlineFont), Arial, Helvetica, sans-serif;
