@@ -297,7 +297,8 @@ figcaption.Figure-caption,
 .PromoA-byline,
 .ArticlePage-breadcrumbs-wrapper,
 .ArticlePage-authorName,
-.ArticlePage-datePublished {
+.ArticlePage-datePublished,
+.Figure-source, .Figure-credit {
     font-family: var(--primaryFont);
 }
 
