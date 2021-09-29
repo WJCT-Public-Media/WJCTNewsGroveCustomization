@@ -308,6 +308,25 @@ figcaption.Figure-caption,
     font-weight: 600;
 }
 
+/* Fixing the caption style */
+
+.Figure-content {
+    display:flex;
+    flex-direction: column;
+}
+
+figcaption.Figure-caption {
+    order:1;
+    justify-content: flex-start;
+}
+
+.Figure-credit-container {
+    order:2;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+
 /* ############################ */
 /* Breakpoint specific styles */
 
@@ -475,7 +494,7 @@ div#latestnewscast {
 }
 
 /* Making the section headers all caps */
-.ListTitles-header-title, .ListE-header-title {
+.ListTitles-header-title, .ListE-header-title, .ListF-header-title {
     text-transform: uppercase;
 }
 
