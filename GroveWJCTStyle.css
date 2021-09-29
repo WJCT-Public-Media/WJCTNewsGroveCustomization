@@ -298,7 +298,12 @@ figcaption.Figure-caption,
 .ArticlePage-breadcrumbs-wrapper,
 .ArticlePage-authorName,
 .ArticlePage-datePublished,
-.Figure-source, .Figure-credit {
+.Figure-source,
+.Figure-credit,
+.ArticlePage-tags-list a.Link,
+.ArticlePage-tags-heading,
+span.StreamPill-text,
+span.BrightspotPersistentPlayer-drawerToggle-text {
     font-family: var(--primaryFont);
 }
 
@@ -316,17 +321,17 @@ figcaption.Figure-caption,
 /* Fixing the caption style */
 
 .Figure-content {
-    display:flex;
+    display: flex;
     flex-direction: column;
 }
 
 figcaption.Figure-caption {
-    order:1;
+    order: 1;
     justify-content: flex-start;
 }
 
 .Figure-credit-container {
-    order:2;
+    order: 2;
     flex-direction: row;
     justify-content: flex-start;
 }
@@ -499,7 +504,9 @@ div#latestnewscast {
 }
 
 /* Making the section headers all caps */
-.ListTitles-header-title, .ListE-header-title, .ListF-header-title {
+.ListTitles-header-title,
+.ListE-header-title,
+.ListF-header-title {
     text-transform: uppercase;
 }
 
