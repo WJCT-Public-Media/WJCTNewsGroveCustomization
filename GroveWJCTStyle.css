@@ -104,12 +104,16 @@ ul.NavigationItem-items {
 }
 
 /* Add light blue line above categories */
-.PromoA-category,
+/* .PromoA-category,
 .PromoB-category,
 .PromoC-category {
     padding-top: 10px;
     border-top-color: var(--WJCT-secondary);
     border-top-style: solid;
+} */
+
+li.ListE-items-item {
+    border-bottom: 3px solid var(--WJCT-secondary);
 }
 
 .PromoA-media,
