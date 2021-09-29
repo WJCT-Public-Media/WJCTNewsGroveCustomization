@@ -66,7 +66,7 @@ footer.Page-footer {
 }
 
 .Page-footer-branding {
-    /* background-color: var(--WJCT-tertiary); */
+    background-color: black;
 }
 
 ul.NavigationItem-items {
