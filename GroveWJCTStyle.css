@@ -277,6 +277,10 @@ button.StreamPill {
     padding-right: 10px;
 }
 
+.Page-header {
+    border-bottom: none;
+}
+
 /* ############################ */
 /* Breakpoint specific styles */
 
@@ -446,3 +450,4 @@ div#latestnewscast {
         margin-right: 0px;
     }
 }
+
