@@ -292,7 +292,8 @@ figcaption.Figure-caption,
 .PromoA-category,
 .PromoA-byline,
 .ArticlePage-breadcrumbs-wrapper,
-.ArticlePage-authorName {
+.ArticlePage-authorName,
+.ArticlePage-datePublished {
     font-family: var(--primaryFont);
 }
 
@@ -467,6 +468,11 @@ div#latestnewscast {
 
 .ListF {
     padding: 0 20px;
+}
+
+/* Making the section headers all caps */
+.ListTitles-header-title, .ListE-header-title {
+    text-transform: uppercase;
 }
 
 @media only screen and (min-width: 768px) {
