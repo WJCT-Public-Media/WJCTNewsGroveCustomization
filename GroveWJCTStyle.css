@@ -281,6 +281,27 @@ button.StreamPill {
     border-bottom: none;
 }
 
+.BrightspotPersistentPlayer-schedule,
+figcaption.Figure-caption,
+.NavigationItem .NavigationLink,
+.PromoC-category,
+.PromoC-byline,
+.PromoB-category,
+.PromoB-byline,
+.PromoA-category,
+.PromoA-byline,
+.ArticlePage-breadcrumbs-wrapper,
+.ArticlePage-authorName {
+    font-family: var(--primaryFont);
+}
+
+.BrightspotPersistentPlayer-schedule,
+.PromoA-byline,
+.PromoB-byline,
+.PromoC-byline {
+    font-weight: 600;
+}
+
 /* ############################ */
 /* Breakpoint specific styles */
 
@@ -442,12 +463,13 @@ div#latestnewscast {
     font-family: var(--secondaryHeadlineFont), Arial, Helvetica, sans-serif;
     font-size: 1.3rem;
 }
+
 .ListF {
     padding: 0 20px;
 }
+
 @media only screen and (min-width: 768px) {
     [class$=-column] .ListF {
         margin-right: 0px;
     }
 }
-
