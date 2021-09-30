@@ -19,14 +19,16 @@ html {
     font-family: var(--primaryFont);
 }
 
-p {
+p,
+.ArticlePage-authorInfo-bio-content {
     line-height: 1.7;
 }
 
 /* Program page font size fix (Podcast, Shows, Franchises) */
 .FranchisePage-description,
 .PodcastPage-description,
-.RadioShowPage-description {
+.RadioShowPage-description,
+.ArticlePage-authorInfo-bio-content {
     font-size: 1.8rem;
 }
 
