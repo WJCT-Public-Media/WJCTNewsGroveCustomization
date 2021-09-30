@@ -131,6 +131,11 @@ ul.NavigationItem-items {
     font-weight: 700;
 }
 
+/* Make subnavigation font heavier */
+li.NavigationItem-items-item.gtm_nav_subcat {
+    font-weight:500;
+}
+
 /* Make volume button yellow/black and make transparent cover disappear */
 button.BrightspotPersistentPlayer-volumeControl-toggle {
     color: black;
@@ -339,6 +344,7 @@ figcaption.Figure-caption {
     flex-direction: row;
     justify-content: flex-start;
 }
+
 
 
 /* ############################ */
