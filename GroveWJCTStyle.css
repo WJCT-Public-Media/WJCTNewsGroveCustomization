@@ -519,3 +519,11 @@ div#latestnewscast {
         margin-right: 0px;
     }
 }
+
+/* What's Health Got to Do with It Sponsor Logos */
+#whgtdwisponsors .ThreeColumnContainer-column {
+    padding: 0 2rem;
+    display: flex;
+    align-items: flex-end;
+
+}
