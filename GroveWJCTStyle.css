@@ -525,5 +525,8 @@ div#latestnewscast {
     padding: 0 2rem;
     display: flex;
     align-items: flex-end;
+}
 
+#whgtdwisponsors .Enhancement {
+    margin:0;
 }
