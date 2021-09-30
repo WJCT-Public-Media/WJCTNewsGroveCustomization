@@ -23,6 +23,13 @@ p {
     line-height: 1.7;
 }
 
+/* Program page font size fix (Podcast, Shows, Franchises) */
+.FranchisePage-description,
+.PodcastPage-description,
+.RadioShowPage-description {
+    font-size: 1.8rem;
+}
+
 .Page-header-hamburger-menu-content,
 .Page-header-hamburger-menu-content,
 .Page-header-hamburger-menu-wrapper {
@@ -133,7 +140,7 @@ ul.NavigationItem-items {
 
 /* Make subnavigation font heavier */
 li.NavigationItem-items-item.gtm_nav_subcat {
-    font-weight:500;
+    font-weight: 500;
 }
 
 /* Make volume button yellow/black and make transparent cover disappear */
@@ -502,7 +509,8 @@ div#latestnewscast {
 }
 
 /* Adjusting the FCC promo & Latest Stories section */
-.Enhancement .PromoXSmall-title .Link, .PromoXSmall-title .Link {
+.Enhancement .PromoXSmall-title .Link,
+.PromoXSmall-title .Link {
     text-decoration: none;
     color: var(--primaryTextColor);
     font-family: var(--secondaryHeadlineFont), Arial, Helvetica, sans-serif;
@@ -534,5 +542,5 @@ div#latestnewscast {
 }
 
 #whgtdwisponsors .Enhancement {
-    margin:0;
+    margin: 0;
 }
