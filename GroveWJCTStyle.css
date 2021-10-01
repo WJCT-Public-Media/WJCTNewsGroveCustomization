@@ -13,6 +13,7 @@
     --headerBgColor: #006BB6;
     --buttonHeight: 40px;
     --WJCT-link: #40C4FF;
+    --headline-1: 5rem;
 }
 
 html {
@@ -67,9 +68,9 @@ nav.DropdownNavigation.gtm_nav .NavigationItem-items-item.gtm_nav_subcat a:hover
 }
 
 .Page-header-donate-button.gtm_donate {
-        font-size: 1.35rem;
-        font-weight: 900;
-        line-height: 1.2;
+    font-size: 1.35rem;
+    font-weight: 900;
+    line-height: 1.2;
 }
 
 footer.Page-footer {
