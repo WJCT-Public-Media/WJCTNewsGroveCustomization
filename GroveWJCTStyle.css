@@ -67,11 +67,9 @@ nav.DropdownNavigation.gtm_nav .NavigationItem-items-item.gtm_nav_subcat a:hover
 }
 
 .Page-header-donate-button.gtm_donate {
-    font-size: 1.1rem;
-    font-weight: 600;
-    line-height: 1.2;
-    letter-spacing: .25em;
-    text-transform: uppercase;
+        font-size: 1.35rem;
+        font-weight: 900;
+        line-height: 1.2;
 }
 
 footer.Page-footer {
