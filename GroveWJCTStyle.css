@@ -129,6 +129,12 @@ ul.NavigationItem-items {
     border-bottom: 3px solid var(--WJCT-secondary);
 } */
 
+.PromoA-category,
+.PromoB-category,
+.PromoC-category {
+    display: none;
+}
+
 .PromoA-media,
 .PromoB-media,
 .PromoC-media {
