@@ -551,3 +551,8 @@ div#latestnewscast {
 #whgtdwisponsors .Enhancement {
     margin: 0;
 }
+
+/* Hiding the Section header name breadcrumbs from the top of the page */
+.ArticlePage-breadcrumbs-wrapper {
+    display: none;
+}
