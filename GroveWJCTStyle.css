@@ -491,28 +491,30 @@ figcaption.Figure-caption {
 
     /* Rearrange buttons and make hamburger menu bigger */
 
-    button.Page-header-menu-trigger {
+    .Page-header-logo {
+        order: 1;
+    }
+
+    button.Page-header-menu-trigger,
+    button.Page-header-hamburger-menu-close {
         order: 2;
+        /* Give the hamburger a rounded rectangle buttom  */
         /* background-color:var(--primaryColor2);
         padding: 2rem;
         border-radius: 5px; */
     }
-    
-    .Page-header-logo {
-        order: 1;
-    }
-    
+
     .Page-header-top-bar-content {
         display: flex;
         justify-content: flex-start;
         flex: none;
     }
-    
+
     .Page-header-top-bar {
         display: flex;
         justify-content: space-between;
     }
-    
+
     ps-header.Page-header {
         padding-top: 1rem;
         padding-bottom: 1rem;
