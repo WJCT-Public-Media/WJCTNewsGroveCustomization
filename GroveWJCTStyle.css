@@ -488,7 +488,7 @@ figcaption.Figure-caption {
     }
 
     /* Rearrange buttons and make hamburger menu bigger */
-    
+
     button.Page-header-menu-trigger {
         order: 2;
         /* background-color:var(--primaryColor2);
@@ -514,6 +514,11 @@ figcaption.Figure-caption {
     .Page-header-search-button-mobile .icon-magnify, .Page-header-search-button .icon-magnify, .Page-header-menu-trigger .burger-menu, .Page-header-hamburger-menu-close .close-x {
         stroke-width: 1px;
         stroke: white;
+    }
+    
+    ps-header.Page-header {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
 }
 
