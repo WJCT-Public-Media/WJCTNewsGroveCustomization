@@ -489,6 +489,16 @@ figcaption.Figure-caption {
         content: "Donate";
     }
 
+    .BrightspotPersistentPlayer-streamInfo {
+        align-items: flex-start;
+        padding-left: 0;
+    }
+    
+    ps-brightspot-persistent-player.BrightspotPersistentPlayer {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
     /* Rearrange buttons and make hamburger menu bigger */
 
     .Page-header-logo {
