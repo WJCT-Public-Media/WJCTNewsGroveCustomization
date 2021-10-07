@@ -199,6 +199,8 @@ button.BrightspotPersistentPlayer-volumeControl-toggle {
 .Page-header-menu-trigger .burger-menu,
 .Page-header-hamburger-menu-close .close-x {
     fill: white;
+    stroke-width: 1px;
+    stroke: white;
 }
 
 /* Change the header background from a color to an image */
@@ -509,11 +511,6 @@ figcaption.Figure-caption {
     .Page-header-top-bar {
         display: flex;
         justify-content: space-between;
-    }
-    
-    .Page-header-search-button-mobile .icon-magnify, .Page-header-search-button .icon-magnify, .Page-header-menu-trigger .burger-menu, .Page-header-hamburger-menu-close .close-x {
-        stroke-width: 1px;
-        stroke: white;
     }
     
     ps-header.Page-header {
