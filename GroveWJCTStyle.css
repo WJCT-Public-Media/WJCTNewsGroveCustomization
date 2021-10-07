@@ -487,6 +487,8 @@ figcaption.Figure-caption {
         content: "Donate";
     }
 
+    /* Rearrange buttons and make hamburger menu bigger */
+    
     button.Page-header-menu-trigger {
         order: 2;
         /* background-color:var(--primaryColor2);
