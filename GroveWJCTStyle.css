@@ -616,3 +616,8 @@ div#latestnewscast {
 .ArticlePage-breadcrumbs-wrapper {
     display: none;
 }
+
+/* Hiding the social buttons on the bottom of the radio episode and podcast episodes until Brightspot fixes them */
+.RSEP-social, .PCEP-social {
+    display: none;
+}
